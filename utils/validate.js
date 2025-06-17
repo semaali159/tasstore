@@ -11,6 +11,7 @@ function validateRegister(obj) {
     firstName: Joi.string().trim().min(2).max(100).required(),
     lastName: Joi.string().trim().min(2).max(100).required(),
     userName: Joi.string().trim().min(2).max(100).required(),
+    phoneNumber: Joi.string().trim().required(),
     email: Joi.string().trim().min(5).max(100).required().email(),
     password: passwordComplexity().required(),
   });
