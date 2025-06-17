@@ -26,6 +26,8 @@ const register = asynchandler(async (req, res) => {
     email,
     password: hashedPassword,
     userName,
+    phoneNumber,
+    phoneNumber,
   });
   return res.status(201).json({
     message: "register successfully ",

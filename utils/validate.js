@@ -29,7 +29,7 @@ function validateLogin(obj) {
 function validateCreateCategory(obj) {
   const schema = Joi.object({
     name: Joi.string().trim().min(2).max(200).required(),
-    description: Joi.string().trim().min(10).required(),
+    description: Joi.string().trim().min(10),
   });
   return schema.validate(obj);
 }
